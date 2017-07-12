@@ -1,0 +1,67 @@
+#frame,#frame_3 {
+        border:1px solid red;
+        border-radius:15px;
+        padding:2px 4px;
+}
+#frame_2{
+border:5px solid ;
+border-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 rgba(229, 229, 229, 255), stop:1 rgba(255, 255, 255, 159));
+border-radius:15px;
+padding:2px 4px;
+}
+QWidget{
+        background-color:white;
+}
+QToolBar{
+    background-color:#FF4700;
+    color:white;
+}
+QToolButton {
+    background-color: #ff6023;
+    border: 1px transparent #4A4949;
+    border-radius: 2px;
+    margin: 3px;
+    padding: 3px;
+    color:white;
+}
+
+QToolButton:hover {
+border:2px groove white;
+border-radius:23px;
+padding:2px 4px;
+color:red;
+background-color:white;
+}
+QToolButton:checked, QToolButton:pressed {
+border:2px groove white;
+border-radius:23px;
+padding:2px 4px;
+color:red;
+background-color:white;
+}
+/*Qmenu Style Sheets*/
+ QMenu {
+     background-color: white; /* sets background of the menu 设置整个菜单区域的背景色，我用的是白色：white*/
+     border: 1px solid white;/*整个菜单区域的边框粗细、样式、颜色*/
+ }
+
+ QMenu::item {
+     /* sets background of menu item. set this to something non-transparent
+         if you want menu color and menu item color to be different */
+     background-color: transparent;
+     padding:8px 32px;/*设置菜单项文字上下和左右的内边距，效果就是菜单中的条目左右上下有了间隔*/
+     margin:0px 8px;/*设置菜单项的外边距*/
+     border-bottom:1px solid #DBDBDB;/*为菜单项之间添加横线间隔*/
+ }
+
+ QMenu::item:selected { /* when user selects item using mouse or keyboard */
+     background-color: #2dabf9;/*这一句是设置菜单项鼠标经过选中的样式*/
+ }
+QListView::item:hover{
+border:2px groove gray;
+border-radius:23px;
+padding:2px 4px;
+}
+QDialog{
+background-color:white;
+}
